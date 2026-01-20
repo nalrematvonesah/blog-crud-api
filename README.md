@@ -1,9 +1,3 @@
-Отлично 👍
-Ниже — **ЕДИНАЯ ФИНАЛЬНАЯ ВЕРСИЯ `README.md`**, уже **объединённая, аккуратная и готовая к сдаче**.
-Просто **скопируй целиком** и вставь в `README.md`.
-
----
-
 # 📘 Blog CRUD API
 
 **Node.js · Express · MongoDB Atlas · Mongoose**
@@ -73,9 +67,6 @@ The database and collection are created automatically when the first blog post i
 The application connects to MongoDB Atlas using **Mongoose**.
 The connection string is stored securely in environment variables.
 
-```env
-MONGO_URI=mongodb+srv://USERNAME:PASSWORD@cluster0.xxxxx.mongodb.net/blogdb?retryWrites=true&w=majority
-```
 
 > ⚠️ Sensitive data (username and password) is not committed to the repository.
 
@@ -115,10 +106,6 @@ npm install
 
 Create a `.env` file in the project root:
 
-```env
-PORT=5000
-MONGO_URI=mongodb+srv://USERNAME:PASSWORD@cluster0.xxxxx.mongodb.net/blogdb?retryWrites=true&w=majority
-```
 
 > Make sure MongoDB Atlas **IP Access List** allows your IP (`0.0.0.0/0` for development).
 
