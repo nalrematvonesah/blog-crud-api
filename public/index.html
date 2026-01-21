@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
   <title>Blog CRUD</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <h1>Blog Platform</h1>
 
+  <!-- CREATE / UPDATE FORM -->
   <form id="blogForm">
-    <input type="text" id="title" placeholder="Title" required>
+    <input type="hidden" id="blogId" />
+
+    <input type="text" id="title" placeholder="Title" required />
     <textarea id="body" placeholder="Body" required></textarea>
-    <input type="text" id="author" placeholder="Author">
-    <button type="submit">Create Blog</button>
+    <input type="text" id="author" placeholder="Author" />
+
+    <button type="submit">Save Blog</button>
+    <button type="button" id="cancelEdit" style="display:none">Cancel</button>
   </form>
 
+  <!-- BLOG LIST -->
   <div id="blogs"></div>
+
+  <!-- SINGLE BLOG VIEW -->
+  <div id="singleBlog" style="display:none"></div>
 
   <script src="script.js"></script>
 </body>
